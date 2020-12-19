@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.app.dao.ArticleDao">
+
+   <!--
+   //    添加文章
+    int insertArticle();
+//    删除文章
+    int delArticleById();
+//    更新文章
+    int updateArticleById();
+//    查找文章
+    ArticleEntity selectArticle();
+    -->
+    <!--
+        private Long articleId;
+
+    /*
+    * 用户id
+    * */
+    private Long userId;
+
+    /*
+    文章内容
+    */
+    private String articleContent;
+
+    /*
+    * 创建时间
+    * */
+    private Date createTime;-->
+<!--    <insert id="insertArticle" parameterType="io.renren.modules.app.entity.ArticleEntity" >-->
+<!--        insert into sys_article(userId,articleTitle,articleContent,createCime)-->
+<!--         values(#{userId},#{articleTitle},#{articleContent},#{createTime})-->
+<!--    </insert>-->
+
+<!--    <select id="selectArticle" resultType="io.renren.modules.app.entity.ArticleEntity">-->
+<!--        select * from sys_article where articleId=#{articleId}-->
+<!--    </select>-->
+
+<!--    <select id="getAllArticle" resultType="io.renren.modules.app.entity.ArticleEntity">-->
+<!--        select * from sys_article LIMIT 20-->
+<!--    </select>-->
+
+<!--    <delete id="delArticleById" parameterType="java.lang.Long" >-->
+<!--        delete from sys_article where articleId=#{}-->
+<!--    </delete>-->
+</mapper>
